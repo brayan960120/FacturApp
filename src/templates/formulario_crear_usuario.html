@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FacturApp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/home">FacturApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item dropdown">
+                
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display: block;">
+                  Usuarios
+                  
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/crear_usuario">Crear usuario</a>
+                  <a class="dropdown-item" href="/lista_usuario">Lista usuarios</a>
+                  <a class="dropdown-item" href="/editar_producto">Editar usuario</a>
+                  <a class="dropdown-item" href="tabla_productos.html">Inhabilitar usuario</a>
+                </div>
+            </li>
+
+            
+            
+           
+          </ul>
+        </div>
+      </nav>    
+      <form action="tabla_usuarios.html">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="id_usuario">Id usuario</label>
+                <input type="int" class="form-control" id="id_usuario" placeholder="Id usuario">
+            </div>
+          <div class="form-group col-md-6">
+            <label for="cuenta_activa">Cuenta activa</label>
+            <input type="boolean" class="form-control" id="cuenta_activa" placeholder="Cuenta activa">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="fecha_de_nacimiento">Fecha de nacimiento</label>
+            <input type="date" class="form-control" placeholder="Fecha de nacimiento">
+          </div>
+           <div class="form-group col-md-6">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" class="form-control" placeholder="Contraseña">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="nombre_completo">Nombre completo</label>
+            <input type="text" class="form-control" placeholder="Nombre completo">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+         
+
+        </div>
+        <a href="/lista_usuario">Guardar</a>
+    </form>
+</body>
+</html>
