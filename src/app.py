@@ -7,11 +7,11 @@ if __name__ == '__main__':
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', titulo_pagina = 'Login')
 
 @app.route('/iniciar')
 def iniciar():
-    return render_template('inicio.html')
+    return render_template('inicio.html' , titulo_pagina ='home')
 
 @app.route('/registro')
 def registro():

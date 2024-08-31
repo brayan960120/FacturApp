@@ -10,33 +10,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="/home">FacturApp</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+  {% extends 'layout.html' %}
 
-            
-            <li class="nav-item dropdown">
-                
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display: block;">
-                  Categorias
-                  
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="/crear_categoria">Crear categoria</a>
-                  <a class="dropdown-item" href="/tabla_categoria">Lista categorias</a>
-                  <a class="dropdown-item" href="/editar_categoria">Editar categoria</a>
-                  <a class="dropdown-item" href="tabla_productos.html">Inhabilitar categoria</a>
-                </div>
-            </li>
-            
-          </ul>
-        </div>
-      </nav>    
+  {% block contenido %}
+    Bienvenido
+  {% endblock contenido %}
       <form action="tabla_categorias.html">
         <div class="form-row">
             
