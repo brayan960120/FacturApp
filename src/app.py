@@ -69,26 +69,34 @@ def tabla_facturas():
 def home():
     return render_template('inicio.html' , titulo_pagina ='Home')
 
-@app.route('/editar_usuario')
-def editar_usuario():
+
+@app.route('/editar_usuario2')
+def editar_usuario2():
     return render_template('editar_usuario.html' , titulo_pagina ='Editar usuario')
 
 
-@app.route('/editar_productos')
-def editar_producto():
+
+
+@app.route('/editar_productos2')
+def editar_producto2():
     return render_template('editar_productos.html' , titulo_pagina ='Editar producto')
 
 
-@app.route('/editar_factura')
-def editar_factura():
+
+@app.route('/editar_factura2')
+def editar_factura2():
     return render_template('editar_factura.html' , titulo_pagina ='Editar factura')
 
 
-@app.route('/editar_cliente')
-def editar_cliente():
+
+
+@app.route('/editar_cliente2')
+def editar_cliente2():
     return render_template('editar_clientes.html' , titulo_pagina ='Editar cliente')
 
 
-@app.route('/editar_categoria')
-def editar_categoria():
+
+
+@app.route('/editar_categoria2')
+def editar_categoria2():
     return render_template('editar_categoria.html' , titulo_pagina ='Editar categoria')
