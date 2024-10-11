@@ -5,7 +5,7 @@ class Categoria(Base):
     __tablename__ = 'Categoria'
     id_categoria = Column(Integer, primary_key = True)
     nombre_categoria = Column(String(45), unique=True, nullable=False)
-    id_usuario= Column(Integer, ForeignKey('id_usuario'), nullable=False)
+    id_usuario= Column(Integer, ForeignKey('Usuario.id_usuario'), nullable=False)
 
 
     def __init__(self, nombre_categoria, id_usuario):

@@ -1,8 +1,7 @@
 from flask_sqlalchemy import SQLAlchemy
 import psycopg2
 from sqlalchemy import create_engine
-from sqlalchemy.orm import declarative_base, sessionmaker
-
+from sqlalchemy.orm import declarative_base, sessionmaker, relationship
 engine= create_engine("postgresql+psycopg2://postgres:brayan965214@localhost:5432/facturaapp")
 
 connection = engine.connect()

@@ -1,7 +1,17 @@
 from flask import Flask,render_template
 from src.models import Base, engine
+from src.models.productos import Producto
+from src.models.categoria import Categoria
+from src.models.cliente import Cliente
+from src.models.factura_producto import Factura_producto
+from src.models.factura import Factura
+from src.models.usuario import Usuario
+
 
 app = Flask(__name__)
+
+app.secret_key = "mi llaveria"
+app.debug = True
 
 Base.metadata.create_all(engine)
 

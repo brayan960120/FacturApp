@@ -8,8 +8,8 @@ class Producto(Base):
     valor_unitario= Column(Float(10,8), nullable=False)
     unidad_de_medida= Column(String(3), nullable=False)
     cantidad_stock= Column(Integer, nullable=False)
-    id_categoria= Column(Integer, ForeignKey('id_categoria'), nullable=False)
-    id_factura_producto= Column(Integer, ForeignKey('id_factura_producto'), nullable=False)
+    id_categoria= Column(Integer, ForeignKey('Categoria.id_categoria'), nullable=False)
+    id_factura_producto= Column(Integer, ForeignKey('Factura_producto.id_factura_producto'), nullable=False)
 
 
 

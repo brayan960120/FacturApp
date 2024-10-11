@@ -7,8 +7,9 @@ class Factura_producto(Base):
     cantidad = Column(Integer, nullable=False)
     nombre_producto= Column(String(45), nullable=False)
     precio_unitario= Column(Float(10,8), nullable=False)
-    id_factura= Column(Integer, ForeignKey('id_factura'), unique=True, nullable=False)
-    id_cliente= Column(Integer, ForeignKey('id_cliente'), unique=True, nullable=False)
+    id_factura= Column(Integer, ForeignKey('Factura.id_factura'), unique=True, nullable=False)
+    id_cliente= Column(Integer, ForeignKey('Cliente.id_cliente'), unique=True, nullable=False)
+   
 
     def __init__(self, cantidad, nombre_producto, precio_unitario, id_factura, id_cliente):
        self.cantidad = cantidad

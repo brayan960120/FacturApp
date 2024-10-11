@@ -7,8 +7,8 @@ class Factura(Base):
     id_factura = Column(Integer, primary_key = True)
     fecha_factura= Column(DateTime, unique=True, nullable=False)
     numero_factura= Column(Integer, unique=True, nullable=False)
-    id_cliente= Column(Integer, ForeignKey('id_cliente'), nullable=False)
-    id_usuario= Column(Integer, ForeignKey('id_usuario'), nullable=False)
+    id_cliente= Column(Integer, ForeignKey('Cliente.id_cliente'), nullable=False)
+    id_usuario= Column(Integer, ForeignKey('Usuario.id_usuario'), nullable=False)
 
 
     
